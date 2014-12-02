@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/samata/projects-git/MAPusart/kicad/MAPusart.sch</source>
-    <date>Tuesday 02 December 2014 08:05:31 PM IST</date>
+    <date>Tuesday 02 December 2014 10:40:37 PM IST</date>
     <tool>Eeschema 0.201411181401+5290~19~ubuntu14.10.1-product</tool>
   </design>
   <components>
@@ -54,6 +54,27 @@
       <libsource lib="MAPusart" part="CONN_6"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>547B59CC</tstamp>
+    </comp>
+    <comp ref="Z3">
+      <value>SCREW</value>
+      <footprint>MAPusart.pretty:MA_Logo2</footprint>
+      <libsource lib="MAPusart" part="SCREW"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547DD237</tstamp>
+    </comp>
+    <comp ref="Z5">
+      <value>SCREW</value>
+      <footprint>MAPusart:OSHW_6mm</footprint>
+      <libsource lib="MAPusart" part="SCREW"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547DD31D</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>USBLC6-2</value>
+      <footprint>MAPusart.pretty:SOT-23-6</footprint>
+      <libsource lib="MAPusart" part="USBLC6-2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547DF6A0</tstamp>
     </comp>
   </components>
   <libparts>
@@ -127,6 +148,12 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="MAPusart" part="SCREW">
+      <fields>
+        <field name="Reference">SC</field>
+        <field name="Value">SCREW</field>
+      </fields>
+    </libpart>
     <libpart lib="MAPusart" part="USB-Micro">
       <footprints>
         <fp>USB-Mini-B-Jack</fp>
@@ -149,6 +176,20 @@
         <pin num="T6" name="T6" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="MAPusart" part="USBLC6-2">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">USBLC6-2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D+IN" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="D-IN" type="input"/>
+        <pin num="4" name="D-OUT" type="output"/>
+        <pin num="5" name="VBUS" type="input"/>
+        <pin num="6" name="D+OUT" type="output"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="MAPusart">
@@ -156,84 +197,94 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(D4-Pad1)">
-      <node ref="R4" pin="2"/>
-      <node ref="D4" pin="1"/>
-    </net>
-    <net code="2" name="Net-(U3-Pad9)">
-      <node ref="U3" pin="9"/>
-    </net>
-    <net code="3" name="Net-(U3-Pad12)">
-      <node ref="U3" pin="12"/>
-    </net>
-    <net code="4" name="Net-(U3-Pad11)">
-      <node ref="U3" pin="11"/>
-    </net>
-    <net code="5" name="Net-(U3-Pad2)">
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="6" name="Net-(U3-Pad1)">
-      <node ref="U3" pin="1"/>
-    </net>
-    <net code="7" name="Net-(U3-Pad27)">
-      <node ref="U3" pin="27"/>
-    </net>
-    <net code="8" name="Net-(U3-Pad23)">
-      <node ref="U3" pin="23"/>
-    </net>
-    <net code="9" name="Net-(U3-Pad24)">
-      <node ref="U3" pin="24"/>
-    </net>
-    <net code="10" name="/RXD">
+    <net code="1" name="/RXD">
       <node ref="U3" pin="25"/>
       <node ref="H10" pin="5"/>
     </net>
-    <net code="11" name="/TXD">
+    <net code="2" name="Net-(U3-Pad1)">
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="3" name="Net-(U3-Pad27)">
+      <node ref="U3" pin="27"/>
+    </net>
+    <net code="4" name="/TXD">
       <node ref="U3" pin="26"/>
       <node ref="H10" pin="4"/>
     </net>
-    <net code="12" name="/GND_U">
-      <node ref="J3" pin="T5"/>
+    <net code="5" name="/GND_U">
+      <node ref="J3" pin="T3"/>
       <node ref="J3" pin="T6"/>
+      <node ref="J3" pin="T5"/>
+      <node ref="J3" pin="T4"/>
       <node ref="J3" pin="T2"/>
       <node ref="J3" pin="T1"/>
       <node ref="J3" pin="5"/>
-      <node ref="J3" pin="T4"/>
-      <node ref="U3" pin="29"/>
-      <node ref="J3" pin="T3"/>
-      <node ref="C10" pin="2"/>
+      <node ref="D1" pin="2"/>
       <node ref="C9" pin="2"/>
+      <node ref="C10" pin="2"/>
       <node ref="U3" pin="3"/>
-      <node ref="H10" pin="1"/>
-      <node ref="H10" pin="2"/>
+      <node ref="U3" pin="29"/>
       <node ref="D4" pin="2"/>
+      <node ref="H10" pin="2"/>
+      <node ref="H10" pin="1"/>
     </net>
-    <net code="13" name="/RST">
+    <net code="6" name="/5V">
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="8"/>
+      <node ref="H10" pin="3"/>
+      <node ref="D1" pin="5"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="7" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="8" name="Net-(D4-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="9" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="10" name="Net-(U3-Pad12)">
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="11" name="Net-(U3-Pad11)">
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="12" name="/D-">
+      <node ref="U3" pin="5"/>
+      <node ref="D1" pin="4"/>
+    </net>
+    <net code="13" name="/D+">
+      <node ref="D1" pin="6"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="14" name="/RST">
       <node ref="U3" pin="28"/>
       <node ref="H10" pin="6"/>
     </net>
-    <net code="14" name="/5V">
-      <node ref="C9" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="J3" pin="1"/>
-      <node ref="U3" pin="8"/>
-      <node ref="H10" pin="3"/>
-      <node ref="U3" pin="7"/>
+    <net code="15" name="Net-(U3-Pad24)">
+      <node ref="U3" pin="24"/>
     </net>
-    <net code="15" name="Net-(J3-Pad4)">
+    <net code="16" name="Net-(U3-Pad23)">
+      <node ref="U3" pin="23"/>
+    </net>
+    <net code="17" name="Net-(J3-Pad4)">
       <node ref="J3" pin="4"/>
     </net>
-    <net code="16" name="/3V3">
-      <node ref="U3" pin="6"/>
-      <node ref="C10" pin="1"/>
-    </net>
-    <net code="17" name="/D-">
+    <net code="18" name="/D-IN">
+      <node ref="D1" pin="3"/>
       <node ref="J3" pin="2"/>
-      <node ref="U3" pin="5"/>
     </net>
-    <net code="18" name="/D+">
+    <net code="19" name="/D+IN">
+      <node ref="D1" pin="1"/>
       <node ref="J3" pin="3"/>
-      <node ref="U3" pin="4"/>
+    </net>
+    <net code="20" name="/3V3">
+      <node ref="C10" pin="1"/>
+      <node ref="U3" pin="6"/>
     </net>
   </nets>
 </export>

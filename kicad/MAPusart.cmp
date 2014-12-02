@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb 0.201411181401+5290~19~ubuntu14.10.1-product   date = Tuesday 02 December 2014 08:25:28 PM IST
+Cmp-Mod V01 Created by Cvpcb 0.201411181401+5290~19~ubuntu14.10.1-product   date = Tuesday 02 December 2014 10:10:39 PM IST
 
 BeginCmp
 TimeStamp = /547B4489;
@@ -12,6 +12,13 @@ TimeStamp = /547B4424;
 Reference = C10;
 ValeurCmp = 100n;
 IdModule  = MAPone.pretty:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /547DF6A0;
+Reference = D1;
+ValeurCmp = USBLC6-2;
+IdModule  = MAPusart.pretty:SOT-23-6;
 EndCmp
 
 BeginCmp
