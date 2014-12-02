@@ -1,0 +1,8 @@
+Reference, Value, Footprint, Datasheet
+U3,CP210X,MAPone.pretty:qfn-28,
+J3,USB-Micro,MAPone.pretty:USB_B_Micro,
+C10,100n,MAPone.pretty:C_0805_HandSoldering,
+C9,100n,MAPone.pretty:C_0805_HandSoldering,
+R4,300E,MAPone.pretty:R_0805_HandSoldering,
+D4,LED_USB,MAPone.pretty:LED-0805,
+H10,FTDI,MAPone.pretty:Socket_Strip_Angled_1x06,

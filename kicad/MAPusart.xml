@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/samata/projects-git/MAPusart/kicad/MAPusart.sch</source>
+    <date>Tuesday 02 December 2014 08:05:31 PM IST</date>
+    <tool>Eeschema 0.201411181401+5290~19~ubuntu14.10.1-product</tool>
+  </design>
+  <components>
+    <comp ref="U3">
+      <value>CP210X</value>
+      <footprint>MAPone.pretty:qfn-28</footprint>
+      <libsource lib="MAPusart" part="CP210X"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547B0876</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>USB-Micro</value>
+      <footprint>MAPone.pretty:USB_B_Micro</footprint>
+      <libsource lib="MAPusart" part="USB-Micro"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547B4117</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100n</value>
+      <footprint>MAPone.pretty:C_0805_HandSoldering</footprint>
+      <libsource lib="MAPusart" part="C_CPL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547B4424</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100n</value>
+      <footprint>MAPone.pretty:C_0805_HandSoldering</footprint>
+      <libsource lib="MAPusart" part="C_CPL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547B4489</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>300E</value>
+      <footprint>MAPone.pretty:R_0805_HandSoldering</footprint>
+      <libsource lib="MAPusart" part="R_CPL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547B49C9</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_USB</value>
+      <footprint>MAPone.pretty:LED-0805</footprint>
+      <libsource lib="MAPusart" part="LED_CPL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547B4A40</tstamp>
+    </comp>
+    <comp ref="H10">
+      <value>FTDI</value>
+      <footprint>MAPone.pretty:Socket_Strip_Angled_1x06</footprint>
+      <libsource lib="MAPusart" part="CONN_6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>547B59CC</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="MAPusart" part="CONN_6">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MAPusart" part="CP210X">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CP210X</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DCD" type="input"/>
+        <pin num="2" name="RI" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="D+" type="input"/>
+        <pin num="5" name="D-" type="input"/>
+        <pin num="6" name="VDD" type="input"/>
+        <pin num="7" name="REGIN" type="input"/>
+        <pin num="8" name="VBUS" type="input"/>
+        <pin num="9" name="~RST" type="input"/>
+        <pin num="11" name="~SUSP" type="input"/>
+        <pin num="12" name="SUSP" type="input"/>
+        <pin num="23" name="CTS" type="input"/>
+        <pin num="24" name="RTS" type="input"/>
+        <pin num="25" name="RXD" type="input"/>
+        <pin num="26" name="TXD" type="input"/>
+        <pin num="27" name="DSR" type="input"/>
+        <pin num="28" name="DTR" type="input"/>
+        <pin num="29" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MAPusart" part="C_CPL">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_CPL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MAPusart" part="LED_CPL">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_CPL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Anode" type="passive"/>
+        <pin num="2" name="Cathode" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MAPusart" part="R_CPL">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_CPL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MAPusart" part="USB-Micro">
+      <footprints>
+        <fp>USB-Mini-B-Jack</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">CON</field>
+        <field name="Value">USB-Micro</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="BiDi"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="ID" type="BiDi"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="T1" name="T1" type="passive"/>
+        <pin num="T2" name="T2" type="passive"/>
+        <pin num="T3" name="T3" type="passive"/>
+        <pin num="T4" name="T4" type="passive"/>
+        <pin num="T5" name="T5" type="passive"/>
+        <pin num="T6" name="T6" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="MAPusart">
+      <uri>/home/samata/projects-git/MAPusart/kicad/MAPusart.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D4-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="2" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="3" name="Net-(U3-Pad12)">
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="4" name="Net-(U3-Pad11)">
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="5" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="6" name="Net-(U3-Pad1)">
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="7" name="Net-(U3-Pad27)">
+      <node ref="U3" pin="27"/>
+    </net>
+    <net code="8" name="Net-(U3-Pad23)">
+      <node ref="U3" pin="23"/>
+    </net>
+    <net code="9" name="Net-(U3-Pad24)">
+      <node ref="U3" pin="24"/>
+    </net>
+    <net code="10" name="/RXD">
+      <node ref="U3" pin="25"/>
+      <node ref="H10" pin="5"/>
+    </net>
+    <net code="11" name="/TXD">
+      <node ref="U3" pin="26"/>
+      <node ref="H10" pin="4"/>
+    </net>
+    <net code="12" name="/GND_U">
+      <node ref="J3" pin="T5"/>
+      <node ref="J3" pin="T6"/>
+      <node ref="J3" pin="T2"/>
+      <node ref="J3" pin="T1"/>
+      <node ref="J3" pin="5"/>
+      <node ref="J3" pin="T4"/>
+      <node ref="U3" pin="29"/>
+      <node ref="J3" pin="T3"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U3" pin="3"/>
+      <node ref="H10" pin="1"/>
+      <node ref="H10" pin="2"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="13" name="/RST">
+      <node ref="U3" pin="28"/>
+      <node ref="H10" pin="6"/>
+    </net>
+    <net code="14" name="/5V">
+      <node ref="C9" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="H10" pin="3"/>
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="15" name="Net-(J3-Pad4)">
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="16" name="/3V3">
+      <node ref="U3" pin="6"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="17" name="/D-">
+      <node ref="J3" pin="2"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="18" name="/D+">
+      <node ref="J3" pin="3"/>
+      <node ref="U3" pin="4"/>
+    </net>
+  </nets>
+</export>

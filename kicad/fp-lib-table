@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name MAPusart)(type Legacy)(uri ${KIPRJMOD}/MAPusart_footprints.mod)(options "")(descr "MAPusart footprints"))
+  (lib (name MAPusart.pretty)(type KiCad)(uri ${KIPRJMOD}/MAPusart.pretty)(options "")(descr "MAPusart pretty"))
+)
