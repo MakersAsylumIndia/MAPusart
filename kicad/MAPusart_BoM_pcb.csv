@@ -5,6 +5,6 @@
 4;"U3";"qfn-28";1;"CP210X";;;
 5;"D4";"LED-0805";1;"LED_USB";;;
 6;"H10";"Socket_Strip_Angled_1x06";1;"FTDI";;;
-7;"D1";"SOT-23-6";1;"USBLC6-2";;;
-8;"Z3";"MA_Logo2";1;"SCREW";;;
-9;"Z5";"OSHW_6mm";1;"SCREW";;;
+7;"Z3";"MA_Logo2";1;"SCREW";;;
+8;"Z5";"OSHW_6mm";1;"SCREW";;;
+9;"D1";"SOT-23-6";1;"USBLC6-2";;;

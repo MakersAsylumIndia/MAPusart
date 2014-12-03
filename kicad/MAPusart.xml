@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/samata/projects-git/MAPusart/kicad/MAPusart.sch</source>
-    <date>Tuesday 02 December 2014 10:40:37 PM IST</date>
-    <tool>Eeschema 0.201411181401+5290~19~ubuntu14.10.1-product</tool>
+    <source>/home/anool/projects-git/MAPusart/kicad/MAPusart.sch</source>
+    <date>Wed Dec  3 13:22:40 2014</date>
+    <tool>Eeschema (2014-12-01 BZR 5309)-product</tool>
   </design>
   <components>
     <comp ref="U3">
@@ -193,7 +193,7 @@
   </libparts>
   <libraries>
     <library logical="MAPusart">
-      <uri>/home/samata/projects-git/MAPusart/kicad/MAPusart.lib</uri>
+      <uri>/home/anool/projects-git/MAPusart/kicad/MAPusart.lib</uri>
     </library>
   </libraries>
   <nets>

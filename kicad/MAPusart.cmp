@@ -1,17 +1,17 @@
-Cmp-Mod V01 Created by Cvpcb 0.201411181401+5290~19~ubuntu14.10.1-product   date = Tuesday 02 December 2014 10:10:39 PM IST
+Cmp-Mod V01 Created by Cvpcb (2014-12-01 BZR 5309)-product   date = Wed Dec  3 13:27:43 2014
 
 BeginCmp
 TimeStamp = /547B4489;
 Reference = C9;
 ValeurCmp = 100n;
-IdModule  = MAPone.pretty:C_0805_HandSoldering;
+IdModule  = MAPusart.pretty:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /547B4424;
 Reference = C10;
 ValeurCmp = 100n;
-IdModule  = MAPone.pretty:C_0805_HandSoldering;
+IdModule  = MAPusart.pretty:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
@@ -25,35 +25,35 @@ BeginCmp
 TimeStamp = /547B4A40;
 Reference = D4;
 ValeurCmp = LED_USB;
-IdModule  = MAPone.pretty:LED-0805;
+IdModule  = MAPusart.pretty:LED-0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /547B59CC;
 Reference = H10;
 ValeurCmp = FTDI;
-IdModule  = MAPone.pretty:Socket_Strip_Angled_1x06;
+IdModule  = MAPusart.pretty:Socket_Strip_Angled_1x06;
 EndCmp
 
 BeginCmp
 TimeStamp = /547B4117;
 Reference = J3;
 ValeurCmp = USB-Micro;
-IdModule  = MAPone.pretty:USB_B_Micro;
+IdModule  = MAPusart.pretty:USB_B_Micro;
 EndCmp
 
 BeginCmp
 TimeStamp = /547B49C9;
 Reference = R4;
 ValeurCmp = 300E;
-IdModule  = MAPone.pretty:R_0805_HandSoldering;
+IdModule  = MAPusart.pretty:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /547B0876;
 Reference = U3;
 ValeurCmp = CP210X;
-IdModule  = MAPone.pretty:qfn-28;
+IdModule  = MAPusart.pretty:qfn-28;
 EndCmp
 
 BeginCmp
@@ -67,7 +67,7 @@ BeginCmp
 TimeStamp = /547DD31D;
 Reference = Z5;
 ValeurCmp = SCREW;
-IdModule  = MAPusart:OSHW_6mm;
+IdModule  = MAPusart.pretty:OSHW_6mm;
 EndCmp
 
 EndListe
